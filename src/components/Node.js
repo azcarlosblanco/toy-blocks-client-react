@@ -11,6 +11,7 @@ import {
 } from "@material-ui/core";
 import colors from "../constants/colors";
 import Status from "./Status";
+import Blocks from "../containers/Blocks";
 
 const Node = ({ node, expanded, toggleNodeExpanded }) => {
   const classes = useStyles();
@@ -45,8 +46,8 @@ const Node = ({ node, expanded, toggleNodeExpanded }) => {
           <Status loading={node.loading} online={node.online} />
         </Box>
       </ExpansionPanelSummary>
-      <ExpansionPanelDetails>
-        <Typography>Blocks go here</Typography>
+      <ExpansionPanelDetails style={{flexDirection: 'column'}}>
+        {!node.loading && node.online && <Blocks nodeUrl={node.url} /> }
       </ExpansionPanelDetails>
     </ExpansionPanel>
   );

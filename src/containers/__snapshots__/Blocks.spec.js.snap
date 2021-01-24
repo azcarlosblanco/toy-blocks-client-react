@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blocks /> should match snapshot 1`] = `
+<div
+  className="MuiGrid-root makeStyles-grid-13 MuiGrid-item MuiGrid-grid-xs-12"
+>
+  <p
+    className="MuiTypography-root makeStyles-text1-14 MuiTypography-body1"
+  >
+    001
+  </p>
+  <p
+    className="MuiTypography-root makeStyles-text2-15 MuiTypography-body1"
+  >
+    The Human Torch
+  </p>
+</div>
+`;
